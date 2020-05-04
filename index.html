@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">Rijul's bank</h1>
+
+    <p
+      style="
+        border: 4px;
+        border-style: solid;
+        padding: 1em;
+        width: 30px;
+        height: 30px;
+        resize: none;
+        max-width: 60px;
+        text-align: center;
+        margin: auto;
+        display: block;
+        font-family: Arial;
+      "
+      id="balance"
+    ></p>
+    <br />
+    <button onclick="depositAmountToBalance('ello')" id="deposit">
+      Deposit
+    </button>
+    <br />
+    <br />
+    <button onclick="withdrawAmountFromBalance()" id="withdraw">
+      Withdraw
+    </button>
+    <script src="main.js"></script>
+  </body>
+</html>
