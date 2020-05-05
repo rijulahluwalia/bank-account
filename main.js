@@ -8,6 +8,7 @@ function depositAmountToBalance() {
     if (amount > 0) {
       balance += amount;
       document.getElementById("balance").innerHTML = "$" + balance;
+      createLogs(amount, "deposit");
     } else {
       alert("You can't withdraw a negative balance!");
     }
@@ -29,6 +30,7 @@ function withdrawAmountFromBalance() {
       if (amount > 0) {
         balance -= amount;
         document.getElementById("balance").innerHTML = "$" + balance;
+        createLogs(amount, "withdraw");
       } else {
         alert("You can't withdraw a negative balance!");
       }
@@ -36,4 +38,9 @@ function withdrawAmountFromBalance() {
   } else {
     alert("Please enter only numbers.");
   }
+}
+function createLogs(amount, side) {
+  document.getElementById("logs").append(side + ": $" + amount);
+  console.log(side);
+  document.getElementById("logs").innerHTML += "<br>";
 }

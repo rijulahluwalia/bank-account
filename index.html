@@ -8,33 +8,33 @@
   </head>
 
   <body>
+    <br /><br />
     <h1 style="text-align: center;">Rijul's bank</h1>
+    
+  </button>
 
-    <p
-      style="
-        border: 4px;
-        border-style: solid;
-        padding: 1em;
-        width: 30px;
-        height: 30px;
-        resize: none;
-        max-width: 60px;
-        text-align: center;
-        margin: auto;
-        display: block;
-        font-family: Arial;
-      "
-      id="balance"
-    ></p>
+  <p id="showWhatsHappening"></p>
+  <div id="balanceDiv">
+    <p id="balance">$0</p>
+    <p id="showWhatsHappening2"></p>
     <br />
-    <button onclick="depositAmountToBalance('ello')" id="deposit">
-      Deposit
-    </button>
-    <br />
-    <br />
-    <button onclick="withdrawAmountFromBalance()" id="withdraw">
+    <br /><br><br>
+    <center>
+    <button onclick="withdrawAmountFromBalance()" id="withdraw"> 
       Withdraw
-    </button>
-    <script src="main.js"></script>
+    >  </button> <button onclick="depositAmountToBalance('ello')" id="deposit">Deposit</button>
+    </div>
+  </center>
+
+  
+  <div id="logs"style="  overflow-y: scroll;max-width:1000px; height:200px;">
+  
+
+
+
+
+    
+</div>
+  <script src="main.js"></script>
   </body>
 </html>

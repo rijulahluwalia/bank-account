@@ -1,6 +1,54 @@
 button {
-  text-align: right;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 40px;
+  margin: 0;
+  opacity: 1;
+  transition: 0.7s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button.hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#balance {
+  border: 6px;
+  border-style: solid;
+  padding: 1em;
+  width: 40px;
+  height: 30px;
+  resize: none;
+  max-width: 1000px;
+  text-align: center;
   margin: auto;
-  display: inline;
-  color: green;
+  display: block;
+  font-family: Arial;
+  border-left-color: black;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-right-color: white;
+  color: black;
+  font-size: 40px;
+}
+
+body {
+  border: 6px;
+  padding: 0.5em;
+  border-style: solid;
+}
+h1 {
+  color: white;
+}
+#logs {
+  border: 3px;
+  padding: 1em;
+  border-style: solid;
+  margin-top: 60px;
+  margin: auto;
+  display: block;
 }
